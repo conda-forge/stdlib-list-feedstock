@@ -1,5 +1,5 @@
-{% set version = "0.3.2" %}
-{% set sha256 = "2b30b7a9f14777ca697fb83165061e50211b1b466a8fc52f85b35fd3a4e4a468" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "c789a699db288cb20119b066bfca56567a5cd5dcc5451b61b9b43d91a6b8598b" %}
 
 package:
   name: stdlib-list
@@ -29,6 +29,7 @@ test:
 about:
   home: http://github.com/jackmaney/python-stdlib-list
   license: BSD 3-Clause
+  license_file: LICENSE
   summary: A list of Python Standard Libraries (2.6-7, 3.2-5)
   dev_url: http://github.com/jackmaney/python-stdlib-list
   doc_url: https://jackmaney.github.io/python-stdlib-list
@@ -36,5 +37,6 @@ about:
 extra:
   recipe-maintainers:
     - ericdill
+    - parente
+    - marshall245
     - jackmaney
-    - mariusvniekerk

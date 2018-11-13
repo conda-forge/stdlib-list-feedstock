@@ -1,5 +1,5 @@
-{% set version = "0.4.0" %}
-{% set sha256 = "c789a699db288cb20119b066bfca56567a5cd5dcc5451b61b9b43d91a6b8598b" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "25e92244ec26299363248a8b44f5cd1f727e44648209cd6975abeec787c5d921" %}
 
 package:
   name: stdlib-list

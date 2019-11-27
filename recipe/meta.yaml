@@ -1,23 +1,21 @@
-{% set version = "0.5.0" %}
-{% set sha256 = "25e92244ec26299363248a8b44f5cd1f727e44648209cd6975abeec787c5d921" %}
+{% set version = "0.6.0" %}
 
 package:
   name: stdlib-list
   version: {{ version }}
 
 source:
-  fn: stdlib_list-{{ version }}.tar.gz
   url: https://github.com/jackmaney/python-stdlib-list/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 133cc99104f5a4e1604dc88ebb393529bd4c2b99ae7e10d46c0b596f3c67c3f0
 
 build:
-  number: 1000
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - sphinx
@@ -28,7 +26,7 @@ test:
 
 about:
   home: http://github.com/jackmaney/python-stdlib-list
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: A list of Python Standard Libraries (2.6-7, 3.2-5)
   dev_url: http://github.com/jackmaney/python-stdlib-list

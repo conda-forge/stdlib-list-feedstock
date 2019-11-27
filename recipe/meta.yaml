@@ -19,6 +19,7 @@ requirements:
   run:
     - python
     - sphinx
+    - functools32  # [py2k]
 
 test:
   imports:

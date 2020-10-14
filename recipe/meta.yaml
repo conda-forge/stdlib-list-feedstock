@@ -10,16 +10,16 @@ source:
 
 build:
   number: 2
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - sphinx
-    - functools32  # [py2k]
 
 test:
   imports:

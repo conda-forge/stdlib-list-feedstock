@@ -9,17 +9,17 @@ source:
   sha256: 66c1c1724a12667cdb35be9f43181c3e6646c194e631efaaa93c1f2c2c7a1f7f
 
 build:
-  number: 1
+  number: 2
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - sphinx
-    - functools32  # [py2k]
 
 test:
   imports:

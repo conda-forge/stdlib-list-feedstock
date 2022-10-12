@@ -19,7 +19,6 @@ requirements:
     - pip
   run:
     - python >=3
-    - sphinx
 
 test:
   imports:

@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: stdlib-list
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/stdlib-list/stdlib-list-{{ version }}.tar.gz
-  sha256: 66c1c1724a12667cdb35be9f43181c3e6646c194e631efaaa93c1f2c2c7a1f7f
+  sha256: a1e503719720d71e2ed70ed809b385c60cd3fb555ba7ec046b96360d30b16d9f
 
 build:
   number: 2

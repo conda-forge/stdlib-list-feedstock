@@ -1,15 +1,15 @@
-About stdlib-list
-=================
+About stdlib-list-feedstock
+===========================
 
-Home: http://github.com/jackmaney/python-stdlib-list
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stdlib-list-feedstock/blob/main/LICENSE.txt)
 
-Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stdlib-list-feedstock/blob/master/LICENSE.txt)
 
-Summary: A list of Python Standard Libraries (2.6-7, 3.2-5)
+Package license: MIT
 
-Development: http://github.com/jackmaney/python-stdlib-list
+Summary: A list of Python Standard Libraries (2.7 through 3.12).
+
+Development: https://github.com/pypi/stdlib-list
 
 Documentation: https://jackmaney.github.io/python-stdlib-list
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1968&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stdlib-list-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1968&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stdlib-list-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -99,7 +99,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance

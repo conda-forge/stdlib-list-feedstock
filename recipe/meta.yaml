@@ -31,6 +31,7 @@ test:
     - pip
 
 about:
+  home: http://github.com/jackmaney/python-stdlib-list
   summary: A list of Python Standard Libraries (2.7 through 3.12).
   dev_url: https://github.com/pypi/stdlib-list
   doc_url: https://jackmaney.github.io/python-stdlib-list

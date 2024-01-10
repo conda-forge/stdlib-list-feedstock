@@ -1,36 +1,41 @@
-{% set version = "0.8.0" %}
+{% set name = "stdlib-list" %}
+{% set version = "0.10.0" %}
 
 package:
-  name: stdlib-list
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/stdlib-list/stdlib-list-{{ version }}.tar.gz
-  sha256: a1e503719720d71e2ed70ed809b385c60cd3fb555ba7ec046b96360d30b16d9f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stdlib_list-{{ version }}.tar.gz
+  sha256: 6519c50d645513ed287657bfe856d527f277331540691ddeaf77b25459964a14
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
-    - python >=3
+    - python >=3.7
+    - flit-core >=3.2,<4
     - pip
   run:
-    - python >=3
+    - python >=3.7
 
 test:
   imports:
     - stdlib_list
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: http://github.com/jackmaney/python-stdlib-list
-  license: BSD-3-Clause
-  license_file: LICENSE
-  summary: A list of Python Standard Libraries (2.6-7, 3.2-5)
-  dev_url: http://github.com/jackmaney/python-stdlib-list
+  summary: A list of Python Standard Libraries (2.7 through 3.12).
+  dev_url: https://github.com/pypi/stdlib-list
   doc_url: https://jackmaney.github.io/python-stdlib-list
+  license: MIT
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:

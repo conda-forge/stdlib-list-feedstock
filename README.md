@@ -3,7 +3,7 @@ About stdlib-list-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stdlib-list-feedstock/blob/main/LICENSE.txt)
 
-
+Home: http://github.com/jackmaney/python-stdlib-list
 
 Package license: MIT
 
@@ -151,4 +151,5 @@ Feedstock Maintainers
 * [@jackmaney](https://github.com/jackmaney/)
 * [@marshall245](https://github.com/marshall245/)
 * [@parente](https://github.com/parente/)
+* [@xhochy](https://github.com/xhochy/)
 

@@ -1,5 +1,5 @@
 {% set name = "stdlib-list" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stdlib_list-{{ version }}.tar.gz
-  sha256: 6519c50d645513ed287657bfe856d527f277331540691ddeaf77b25459964a14
+  sha256: b74a7b643a77a12637e907f3f62f0ab9f67300bce4014f6b2d3c8b4c8fd63c66
 
 build:
   noarch: python
